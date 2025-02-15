@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/bmwlogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Models</title>
+  </head>
+  <body class="models-page">
+    <header id="page-head" class="home-head">
+      <div class="navbar">
+        <div class="logo">
+          <a href="../index.html">Sheer Driving Pleasure</a>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../newest model/index.html">Newest Model</a></li>
+          <li><a href="../models/">Models</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+        <a href="#" class="action-btn">Discover More</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../newest model/index.html">Newest Model</a></li>
+        <li><a href="../models/index.html">Models</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="#" class="action-btn">Discover More</a></li>
+      </div>
+    </header>
+
+    <section>
+      <div class="filter-section">
+        <label for="priceFilter">Filter by Price:</label>
+        <select id="priceFilter" onchange="filterCars()">
+          <option value="all">All</option>
+          <option value="low">Below $30,000</option>
+          <option value="mid">$30,000 - $50,000</option>
+          <option value="high">Above $50,000</option>
+        </select>
+
+        <label for="typeFilter">Filter by Type:</label>
+        <select id="typeFilter" onchange="filterCars()">
+          <option value="all">All</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="coupe">Coupe</option>
+        </select>
+        
+        <label for="transmissionFilter">Filter by Transmission:</label>
+<select id="transmissionFilter" onchange="filterCars()">
+  <option value="all">All</option>
+  <option value="automatic">Automatic</option>
+  <option value="manual">Manual</option>
+</select>
+      </div>
+
+      
+    </section>
+
+    <section>
+      <div class="container">
+        <div
+          class="container-item"
+          data-name="BMW M2 Coupe"
+        >
+          <img src="../assets/m2 coupe.jpg" alt="m2" />
+          <h2>BMW M2 Coupe</h2>
+          <p>From 89.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW M4 Coupe"
+          
+        >
+          <img src="../assets/m4 coupe.jpg" alt="m4" />
+          <h2>BMW M4 Coupe</h2>
+          <p>From 99.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW M440i Coupe"
+          
+        >
+          <img src="../assets/m440i Coupe.png" alt="m440i" />
+          <h2>BMW M440i Coupe</h2>
+          <p>From 110.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW M5 Touring"
+          
+        >
+          <img src="../assets/m5 touring.jpg" alt="m5" />
+          <h2>BMW M5 Touring</h2>
+          <p>From 120.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW M8 Competition"
+          
+        >
+          <img src="../assets/m8 competition.jpg" alt="m8" />
+          <h2>BMW M8 Copetition</h2>
+          <p>From 143.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW X3 xDrive"
+          
+        >
+          <img src="../assets/X3 30 xDrive.jpg" alt="x3" />
+          <h2>BMW X3 xDrive</h2>
+          <p>From 78.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW X4 M40i"
+          
+        >
+          <img src="../assets/X4 M40i.jpg" alt="x4" />
+          <h2>BMW X4 M40i</h2>
+          <p>From 112.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW X5 M60i"
+          
+        >
+          <img src="../assets/X5 M60i.jpg" alt="x5" />
+          <h2>BMW X5 M60i</h2>
+          <p>From 134.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+        <div
+          class="container-item"
+          data-name="BMW 840i Coupe"
+>
+          <img src="../assets/840i coupe.jpg" alt="840i" />
+          <h2>BMW 840i Coupe</h2>
+          <p>From 95.000$</p>
+          <a href="../contact/index.html"><button>BUY NOW</button></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 - 2025 OnlineShop - All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

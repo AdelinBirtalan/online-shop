@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+/*Navigation-Bar*/
+
+
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(27, 67, 151);
+}
+
+.newmod-head {
+    position: relative;
+    padding: 0 2rem;
+    height: 100vh;
+    background-color: black;
+    background-image: url(.//assets/bmwnewmod.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.navbar {
+    background-color: rgba(206, 225, 235, 0.412);
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn {
+    background-color: rgb(75, 109, 183);
+    color: white;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition:scale 0.2 ease ;
+}
+
+.action-btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action-btn:active {
+    scale: 0.95;
+}
+
+
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*Navigation-Bar*/
+
+
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 400px 50px 400px;
+    line-height: 30px;
+}
+
+.hero p {
+    font-size: 30px;
+}
+
+.hero h6 {
+    margin-top: 20px;
+    font-size: 15px;
+    color: grey;
+}
+
+.hero h4 {
+    margin-top: 70px;
+}
+
+.car-present{
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+}
+
+.car-present img {
+    filter: brightness(50%);
+    z-index: 2;
+}
+.car-present p {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.car-present h4 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.present-box {
+    height: 100vh;
+    background-color: rgb(255, 209, 223);
+    display: block;
+}
+
+.des-box video {
+    width: 600px;
+    margin: 100px -300px 0px 400px;
+}
+
+.des-box p {
+    display: flex;
+    justify-content: right;
+    margin: -600px 300px 300px 300px;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.home-head {
+    position: relative;
+    padding: 0 2rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.674);
+}
+
+.hero-container video {
+    width: 100%;
+    height:calc(100vh - 80px);
+    object-fit: cover;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.search-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-box input {
+    text-align: center;
+    font-size: 15px;
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(69, 159, 244);
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.search-box button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(69, 159, 244);
+    cursor: pointer;
+}
+
+.search-box h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.search-box h2 {
+    color: rgb(69, 159, 244);
+    text-shadow: 1px 1px #434343;
+}
+
+.search-box img {
+    width: 37px;
+}
+
+.search-box button:hover {
+   background-color: rgb(43, 113, 178);
+   color: white;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px 20px 20px 120px;
+    row-gap: 100px;
+}
+
+.container-item {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    margin-right: 50px;
+}
+
+.container-item:hover {
+    box-shadow: 0px 0px 10px 12px rgba(29, 88, 156, 0.2);
+    cursor: pointer;
+}
+
+.container-item h2 {
+    margin-bottom: 5px;
+}
+
+.container-item p {
+    margin-bottom: 12px;
+}
+
+
+.container-item img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect */
+}
+.container-item:hover img {
+    transform: scale(1.1); /* Makes the image grow slightly */
+}
+
+.container-item button {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+}
+.container-item button:hover {
+    background-color: rgb(181, 181, 181);
+    cursor: pointer;
+}
+
+
+.collapse-content {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+
+  .collapse-content img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .collapse-content button {
+    width: 200px;
+    margin-left: 160px;
+    display: block;
+  }
+
+  i {
+    margin-right: 10px;
+    color: rgba(0, 97, 252, 0.7);
+  }
+
+
+  .collapse-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .drop-btn {
+    background-color: white;
+  }
+
+  .filter-section {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .filter-section label {
+    font-weight: bold;
+  }
+  
+  .filter-section select {
+    background-color: rgba(214, 227, 234, 0.674);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  footer {
+    text-align: center;
+    border-top: 1px black solid;
+    margin: 70px 0px 30px 0px;
+    padding-top: 30px;
+  }
+
+  .contact-container {
+    font-family: "Rubik", serif;
+    position: relative;
+    left: 17%;
+    transform: translate(-50%, );
+    background-color: rgb(236, 228, 228);
+    width: 1300px;
+    height: 800px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    z-index: 0;
+  }
+
+  .contact-container img {
+    display: flex;
+    justify-content: left;
+    object-fit: cover;
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:20px ;
+    right: 200px;
+  }
+
+  form h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  input {
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 18px, rgba(0, 0, 0, 0.1) 6px 10px 12px;
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 550;
+  }
+
+  #submit-btn {
+    background-color: rgba(0, 97, 252, 0.7);
+    width: 300px;
+    margin-left: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #submit-btn:hover {
+    background-color: rgba(0, 98, 255, 1);
+    width: 300px;
+    margin-left: 100px;
+    transform: scale(1.1); 
+  }
+
+  .fname {
+    margin-top: 100px;
+  }
+
+  .info-container {
+    font-weight: 500;
+     font-family: "Rubik", serif;
+    position: absolute;
+    background-color: 	rgba(234, 221, 202, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 18px, rgba(0, 0, 0, 0.1) 6px 10px 20px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 50px;
+    z-index: 1;
+    top: 250px;
+    left: 100px;
+  }
+
+  
+
+  /*Media*/
+
+  @media(max-width: 992px){
+    .navbar .links,
+    .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .dropdown_menu {
+        display: block;
+        z-index: 1;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+    .filter-section {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .navbar .logo a {
+        font-size: 1rem;
+    }
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .search-box button {
+        margin-top: 20px;
+        width: 40px;
+        height: 20px;
+    }
+    .newmod-head {
+        height: 50vh;
+    }
+    .hero {
+        height: 90vh;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+
+    .car-present img {
+        width: 100%;
+    }
+    .car-present p {
+        top: 65%;
+        font-size: 15px;
+    }
+    
+    .car-present h4 {
+        display: none;
+    }
+
+    .present-box {
+        margin-top: 30px;
+        height: 100%;
+    }
+    
+    .des-box video {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .des-box p {
+        display: block;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .container {
+        display: block;
+        margin: 0;
+    }
+    .container-item {
+        margin-right: 0px;
+        margin-bottom: 100px;
+    }
+
+    .container-item img {
+        width: 100%;
+    }
+    .info-container {
+        display: none;
+      }
+
+      .contact-container {
+        display: block;
+        position: absolute;
+        left: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+      }
+    
+      .contact-container img {
+        display: none;
+      }
+
+      form {
+        top:auto;
+        right: auto;
+      }
+    
+      form h1 {
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+    
+      input {
+        width: 100%;
+        height: 100%;
+      }
+     
+      #submit-btn {
+        width: 100%;
+        margin-left: 0;
+      }
+    
+
+}
+
+
+@media (max-width : 1024px) and (min-width : 540px)
+   and (max-height : 1370px) and (min-height : 720px) {
+    .container {
+        display: block;
+    }
+    
+    .container-item {
+        margin-bottom: 100px;
+    }
+    .hero {
+        width: 100%;
+        height: 30vh;
+        padding: 0px;
+    }
+      
+    .hero h4 {
+        font-size: 20px;
+    }
+    
+    .car-present{
+        width: 100%;
+    }
+    
+    .car-present img {
+        width: 100%;
+    }
+
+    .present-box {
+        height: 100%;
+        display: block;
+    }
+    
+    .des-box video {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .des-box p {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .container-item img {
+        width: 70%;
+        height: 70%;
+    }
+
+    
+
+}
+
+/*Media*/
+
+
+/*Media IPad LandScape*/
+
+
+@media (orientation: landscape) and (min-width : 1026px) and (min-height : 1024px){
+    .des-box video {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .des-box p {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .container-item img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .car-present img {
+        width: 100%;
+    }
+    
+}
+/*Media IPad LandScape*/
+
+
+
+
+/*Media IPad Air LandScape*/
+
+@media (max-height : 900px) {
+    .des-box video {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .des-box p {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .container-item img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .car-present img {
+        width: 100%;
+    }
+}
+
+/*Media IPad Air LandScape*/
+
+
+
+
+
+
+/*Media*/
+
+
+
+
