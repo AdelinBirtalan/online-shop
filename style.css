@@ -471,7 +471,122 @@ a:hover{
     left: 100px;
   }
 
-  
+ 
+  .carousel-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65rem;
+    height: 60vh;
+    margin: 0px 10px 10px 0px;
+    border-top: 2px solid #97dbffd4;
+    padding-bottom: 20px;
+    background: linear-gradient(to right, #97dbffd4 50%, #c6e8fbb8 100%);
+  }
+
+  .carousel {
+    width: 70%;
+}
+
+.carousel img {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: black; 
+    border-radius: 50%; 
+}
+
+
+.price-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 55rem;
+    height: 60vh;
+    border-top: 2px solid #97dbffd4;
+    background: linear-gradient(to left, #97dbffd4 50%, #c6e8fbb8 100%);
+}
+
+.price-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 60px;
+}
+
+.price-container {
+    padding: 20px;
+}
+
+.price {
+    font-size: 28px;
+    color: rgba(0, 98, 255, 1);
+    margin: 10px 0;
+    margin-top: 40px;
+}
+
+.tax-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.buy-options {
+    margin-top: 15px;
+}
+
+.buy-btn, .finance-btn {
+    background: rgba(0, 98, 255, 1);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover, .finance-btn:hover {
+    background: rgba(0, 98, 255, 1);
+}
+
+.finance-btn {
+    background: #333;
+}
+
+.finance-btn:hover {
+    background: #222;
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-info a {
+    color: rgba(0, 98, 255, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+
 
   /*Media*/
 
