@@ -473,26 +473,33 @@ a:hover{
 
  
   .carousel-container {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 65rem;
-    height: 60vh;
-    margin: 0px 10px 10px 0px;
+    height: 100vh;
+    margin: 10px 0px 0px 0px;
     border-top: 2px solid #97dbffd4;
-    padding-bottom: 20px;
     background: linear-gradient(to right, #97dbffd4 50%, #c6e8fbb8 100%);
   }
 
+  .car-detail-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .carousel {
-    width: 70%;
+    width: 80%;
+    height: 500px;
 }
 
 .carousel img {
     width: 100%; 
-    height: 400px;
+    height: 500px;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .carousel-control-prev-icon, 
@@ -503,14 +510,15 @@ a:hover{
 
 
 .price-container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     right: 0;
     width: 55rem;
-    height: 60vh;
+    height: 100vh;
+    margin-top: 10px;
     border-top: 2px solid #97dbffd4;
     background: linear-gradient(to left, #97dbffd4 50%, #c6e8fbb8 100%);
 }
@@ -524,9 +532,7 @@ a:hover{
     margin-top: 60px;
 }
 
-.price-container {
-    padding: 20px;
-}
+
 
 .price {
     font-size: 28px;
@@ -584,6 +590,74 @@ a:hover{
     text-decoration: underline;
 }
 
+.car-info-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65rem;
+    height: 60vh;
+    margin: 0px;
+   
+    background: linear-gradient(to right, #97dbffd4 50%, #c6e8fbb8 100%);
+}
+
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #97dbffd4;
+    
+}
+
+th {
+    background-color: #0044cc;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.video-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55rem;
+    height: 60vh;
+    margin: 0;
+    background: linear-gradient(to left, #97dbffd4 50%, #c6e8fbb8 100%);
+}
+
+.video-container h3 {
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    color: #007BFF;
+}
+
+
+
+.video-container video {
+    width: 40rem;
+    border-radius: 20px;
+}
+
+.car-info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
